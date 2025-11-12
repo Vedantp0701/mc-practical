@@ -1,4 +1,4 @@
-EXPT.4
+
 
 
 #include<p18F4520.h> 
@@ -67,4 +67,5 @@ void delay(unsigned int itime){
 int i,j; 
 for(i=0;i<itime;i++) 
 for(j=0;j<1275;j++); 
+
 }
