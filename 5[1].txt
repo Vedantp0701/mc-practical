@@ -1,5 +1,4 @@
-Expt : 5                                                                                                                       
-ROLL NO : 
+
 #include <P18f4520.h> 
 #pragma config OSC=HS 
 #pragma config PWRT=OFF 
@@ -77,4 +76,5 @@ lcdcmd(0x01);
 delay(1); 
 lcdcmd(0x06); 
 delay(1); 
+
 }
