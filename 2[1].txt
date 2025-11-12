@@ -1,0 +1,112 @@
+Experiment no 2: LED interfacing with 8051 microcontroller
+
+HEX counter
+#include<reg51.h>
+void Delay (void);
+void main (void)
+{
+unsigned char count=0x00;
+while(1)
+{
+P2=count;
+Delay();
+count=count+1;
+}
+}
+
+void Delay (void)
+{
+int i,j;
+for (i=0;i<10;i++)
+{
+for (j=0;j<10000;j++)
+{
+}
+}
+}
+
+
+
+BCD counter
+#include<reg51.h>
+void Delay (void);
+void main (void)
+{
+unsigned char count=0x00,
+x,d1,d2,d3;
+while(1)
+{
+x=count/10;
+d1=count%10;
+d2=x%10;
+d3=x/10;
+P1=d1;
+P2=d2;
+P3=d3;
+Delay();
+count=count+1;
+}
+}
+
+void Delay (void)
+{
+int i,j;
+for (i=0;i<10;i++)
+{
+for (j=0;j<10000;j++)
+{
+}
+}
+]
+
+
+
+Flashing LED
+#include<AT89X51.h>
+void Delay (void);
+void main (void)
+{
+   while(1)
+   {
+         P2=0XFF;
+	 Delay();
+	 P2=0X00;
+	 Delay();
+   }
+ }
+
+void Delay (void)
+{
+int i,j;
+for (i=0;i<10;i++)
+{
+for (j=0;j<10000;j++)
+{
+}
+}
+
+
+Alternate LED
+#include<AT89X51.h>
+void Delay (void);
+void main (void)
+{
+   while(1)
+   {
+         P2=0X55;
+	 Delay();
+	 P2=0XAA;
+	 Delay();
+   }
+ }
+
+void Delay (void)
+{
+int i,j;
+for (i=0;i<10;i++)
+{
+for (j=0;j<10000;j++)
+{
+}
+}
+}
