@@ -1,5 +1,4 @@
-Expt : 6                                                                                                                        
-ROLL NO : 
+
 #include <P18f4520.h> 
 #include"lcd.h" 
 #pragma config OSC=HS 
@@ -56,4 +55,5 @@ if(R2 == 0){lcddat ('8');} // Display 7
 if(R3 == 0){lcddat ('4');} // Display B 
 if(R4 == 0){lcddat ('0');} // Display F 
 } 
+
 }
