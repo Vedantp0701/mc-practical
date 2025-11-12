@@ -1,5 +1,4 @@
-Expt : 8                                                                                                                        
-ROLL NO : 
+
 #include <p18f4520.h> 
 //Configuration bit setting// 
 #pragma config OSC = HS //Oscillator Selection 
@@ -43,4 +42,5 @@ RX_DATA[10] = '\0';
 Transmit_String (MSG4); 
 Transmit_String (RX_DATA); 
 while(1); 
+
 } 
