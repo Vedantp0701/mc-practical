@@ -1,5 +1,4 @@
-Expt : 7                                                                                                                        
-ROLL NO : 
+
 #include<P18F4520.h> 
 #pragma config OSC=HS 
 #pragma config PWRT=OFF 
@@ -85,4 +84,5 @@ void lcddata (unsigned char value)
     en=1;
     delay(1);
     en=0;
+
 }
