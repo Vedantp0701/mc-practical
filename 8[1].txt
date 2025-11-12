@@ -78,3 +78,11 @@ for(i=0;i<itime;i++)
 for(j=0;j<135;j++); 
 } 
 void lcddata (unsigned char value) 
+{
+    ldata=value;
+    rs=1;
+    rw=0;
+    en=1;
+    delay(1);
+    en=0;
+}
